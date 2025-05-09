@@ -1,6 +1,8 @@
-from src.App import StartApp
+# main.py
 
-if __name__ == "__main__":
-    app = StartApp(__name__)
+from src.app import create_app
 
-    app.run()
+app = create_app()
+
+if __name__ == '__main__':
+    app.run(debug=True)
